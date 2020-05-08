@@ -59,7 +59,7 @@ public class MixedDrink extends Drink{
 
     @Override
     public String toString() {
-        String out = "This mixed drink is a " + this.getName() + " and has the following ingredients:\n";
+        String out = "This mixed drink is a \"" + this.getName() + "\" and has the following ingredients:\n";
         for (Liquid l : ingredients) {
             out = out.concat("- " + l.getName() + "\n");
         }
