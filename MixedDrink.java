@@ -1,4 +1,5 @@
 /*
+Name: MixedDrink
 Created: Darlene Antonino
 Last changed: 08.05.2020; Darlene Antonino
 Description: this class is a subclass from the "Drink" class; it contains more complex drinks, which consist of more
@@ -12,13 +13,18 @@ public class MixedDrink extends Drink{
 
     //attributes
     List <Liquid> ingredients = new ArrayList<Liquid>();
+    String kind;
+    String decoration;
+
 
 //constructor
-    MixedDrink(String name, List <Liquid> ingredients){
+    MixedDrink(String name, List<Liquid> ingredients, String kind, String decoration){
         super(name);
         this.ingredients = ingredients;
+        this.kind = kind;
+        this.decoration = decoration;
     }
-    
+
     @Override
     public double getVolume() {
         double volume = 0;
@@ -49,5 +55,15 @@ public class MixedDrink extends Drink{
             }
         }
         return false;
+    }
+
+    @Override
+    public String toString() {
+        String out = "This mixed drink is a " + this.getName() + " and has the following ingredients:\n";
+        for (Liquid l : ingredients) {
+            out = out.concat("- " + l.getName() + "\n");
+        }
+        out = out.concat("The drink is a " + this.kind + "-drink.\nIt is served with a " + this.decoration + ".");
+        return out;
     }
 }
