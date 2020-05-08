@@ -53,7 +53,7 @@ public class SimpleDrink extends Drink{
 
     @Override
     public String toString() {
-        String out = "This simple drink is a " + this.getName() + " and has the following ingredient:\n" +
+        String out = "This simple drink is a \"" + this.getName() + "\" and has the following ingredient:\n" +
                 this.l.getName() + ".";
         return out;
     }
