@@ -54,7 +54,12 @@ public class SimpleDrink extends Drink{
     @Override
     public String toString() {
         String out = "This simple drink is a \"" + this.getName() + "\" and has the following ingredient:\n" +
-                this.l.getName() + ".";
+                this.l.getName() + ".\nThis is a";
+        if(this.isAlcoholic()){
+            out = out.concat("n alcoholic simple drink. It has " + String.format("%.2f", getAlcoholPercent()) + "% alcohol in it.");
+        }else{
+            out = out.concat(" non-alcoholic simple drink.");
+        }
         return out;
     }
 
