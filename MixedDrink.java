@@ -37,16 +37,23 @@ public class MixedDrink extends Drink{
     /*with the help of the following website
     (https://www.breath-tester.com/was-bedeutet-volumenprozent-auf-flaschenetiketten/) we calculated the mg of alcohol
     in the mixed drink; we further calculate the percentage
+
+    @return the percentage of alcohol in a drink
     */
     @Override
     public double getAlcoholPercent() {
-        int alc = 0;
+        double alc = 0;
         for (Liquid l : ingredients) {
             alc += l.getVolume() * l.getAlcoholPercent() / 100 * 0.8;
         }
         return alc / this.getVolume() * 100;
     }
 
+    /**
+     * Gives information if drink is alcoholic or not
+     *
+     * @return true when alcoholic liquids are present, otherwise false
+     */
     @Override
     public boolean isAlcoholic() {
         for (Liquid l : ingredients) {
@@ -63,7 +70,12 @@ public class MixedDrink extends Drink{
         for (Liquid l : ingredients) {
             out = out.concat("- " + l.getName() + "\n");
         }
-        out = out.concat("The drink is a " + this.kind + "-drink.\nIt is served with a " + this.decoration + ".");
+        out = out.concat("The drink is a " + this.kind + "-drink.\nIt is served with a " + this.decoration + ".\nThis is a");
+        if(this.isAlcoholic()){
+            out = out.concat("n alcoholic mixed drink. It has " + String.format("%.2f", getAlcoholPercent()) + "% alcohol in it.");
+        }else{
+            out = out.concat(" non-alcoholic mixed drink.");
+        }
         return out;
     }
 }
