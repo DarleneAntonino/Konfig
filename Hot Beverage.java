@@ -12,18 +12,29 @@ import java.util.List;
 
 public class HotBeverage extends Drink{
 
-    //attributes
+    /**
+     * uses multiple liquids
+     */
     List <Liquid> ingredients = new ArrayList<Liquid>();
     String kind;
 
 
-    //constructor
-    HotBeverage(String name, List<Liquid> ingredients, String kind){
+   /**
+     * Creates a HotBeverage object
+     *
+     * @param name name of drink
+     * @param ingredients list of liquids
+     */
+    HotBeverage(String name, List<Liquid> ingredients){
         super(name);
         this.ingredients = ingredients;
-        this.kind = kind;
     }
 
+    /**
+     * Returns volume of liquids in the list combined
+     *
+     * @return the volume of drink in litre
+     */
     @Override
     public double getVolume() {
         double volume = 0;
@@ -33,10 +44,12 @@ public class HotBeverage extends Drink{
         return volume;
     }
 
-    /*with the help of the following website
-    (https://www.breath-tester.com/was-bedeutet-volumenprozent-auf-flaschenetiketten/) we calculated the mg of alcohol
-    in the hot beverage; we further calculate the percentage
-    @return the percentage of alcohol in a hot beverage drink
+    /**
+     * with the help of the following website
+     * (https://www.breath-tester.com/was-bedeutet-volumenprozent-auf-flaschenetiketten/) we calculated the mg of alcohol
+     * in the mixed drink; we further calculate the percentage
+     *
+     * @return the percentage of alcohol in a drink
     */
     @Override
     public double getAlcoholPercent() {
@@ -64,11 +77,11 @@ public class HotBeverage extends Drink{
 
     @Override
     public String toString() {
-        String out = "This hot beverage is a \"" + this.getName() + ": \n";
+        String out = ("This hot beverage is a " + this.getName() + "and has the following ingredients: \n");
         for (Liquid l : ingredients) {
             out = out.concat("- " + l.getName() + "\n");
         }
-        out = out.concat("The hot beverage is a " + this.kind + "-beverage." + ".\nThis is a");
+        out = out.concat("This is a");
         if(this.isAlcoholic()){
             out = out.concat("n alcoholic hot beverage. It has " + String.format("%.2f", getAlcoholPercent()) + "% alcohol in it.");
         }else{
