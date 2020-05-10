@@ -1,7 +1,7 @@
 /*
 Name: MixedDrink
 Created: Darlene Antonino
-Last changed: 08.05.2020; Darlene Antonino
+Last changed: 10.05.2020; Darlene Antonino
 Description: this class is a subclass from the "Drink" class; it contains more complex drinks, which consist of more
 then one liquid; the liquids are named in the List "ingredients"
  */
@@ -11,13 +11,24 @@ import java.util.List;
 
 public class MixedDrink extends Drink{
 
-    //attributes
+    /**
+     * uses multiple liquids
+     * shaken, stirred or poured
+     * different decorations
+     */
     List <Liquid> ingredients = new ArrayList<Liquid>();
     String kind;
     String decoration;
 
 
-//constructor
+    /**
+     * Creates a MixedDrink object
+     *
+     * @param name name of drink
+     * @param ingredients list of liquids
+     * @param kind if it is shaken, stirred or poured
+     * @param decoration what the drink is served with
+     */
     MixedDrink(String name, List<Liquid> ingredients, String kind, String decoration){
         super(name);
         this.ingredients = ingredients;
@@ -25,6 +36,11 @@ public class MixedDrink extends Drink{
         this.decoration = decoration;
     }
 
+    /**
+     * Returns volume of liquids in the list combined
+     *
+     * @return the volume of drink in litre
+     */
     @Override
     public double getVolume() {
         double volume = 0;
@@ -34,11 +50,12 @@ public class MixedDrink extends Drink{
         return volume;
     }
 
-    /*with the help of the following website
-    (https://www.breath-tester.com/was-bedeutet-volumenprozent-auf-flaschenetiketten/) we calculated the mg of alcohol
-    in the mixed drink; we further calculate the percentage
-
-    @return the percentage of alcohol in a drink
+    /**
+     * with the help of the following website
+     * (https://www.breath-tester.com/was-bedeutet-volumenprozent-auf-flaschenetiketten/) we calculated the mg of alcohol
+     * in the mixed drink; we further calculate the percentage
+     *
+     * @return the percentage of alcohol in a drink
     */
     @Override
     public double getAlcoholPercent() {
@@ -64,6 +81,11 @@ public class MixedDrink extends Drink{
         return false;
     }
 
+    /**
+    * Gives a String about the current drink containing information
+    *
+    * @return String regarding the drinks info
+     */
     @Override
     public String toString() {
         String out = "This mixed drink is a \"" + this.getName() + "\" and has the following ingredients:\n";
