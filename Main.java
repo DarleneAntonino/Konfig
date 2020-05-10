@@ -103,7 +103,7 @@ public class Main {
         
         //Long Black
         List<Liquid> longB = new ArrayList<Liquid>();
-        longB.add(hotWater);
+        longB.add(water);
         longB.add(coffee);
         longB.add(coffee);
         HotBeverage longBlack = new HotBeverage("Long Black", longB);
