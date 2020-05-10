@@ -1,7 +1,7 @@
 /*
 Name: Main
 Created: Darlene Antonino
-Last changed: 08.05.2020; Darlene Antonino
+Last changed: 10.05.2020; Viola Schlocker
 Description: this class contains all the different Liquids and Drinks; here the Drinks get tested if they are valide
  */
 
