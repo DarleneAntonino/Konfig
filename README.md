@@ -18,7 +18,7 @@ This is an important piece of code because it gives an example of what the print
     */\
     @Override\
     public String toString() { \
-        String out = "This mixed drink is a \"" + this.getName() + "\" and has the following ingredients:\n"; \
+    >   String out = "This mixed drink is a \"" + this.getName() + "\" and has the following ingredients:\n"; \
         for (Liquid l : ingredients) { \
             out = out.concat("- " + l.getName() + "\n"); \
         } \
