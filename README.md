@@ -1,4 +1,4 @@
-# Konfig\
+# Konfig
 Kofig Abgabe 13.05
 
 1. This project lists drinks form a menu. Given we had a *SimpleDrink.java*, *Drink.java* and *Liquid.java*.
