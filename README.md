@@ -8,14 +8,14 @@ Kofig Abgabe 13.05
 5. The method *TestMyException.smallEnough()* throws if the drink is too big for a glass.
 
 
-Code sample from *MixedDrinks.java*:
+Code sample from *MixedDrinks.java*:\
 This is an important piece of code because it gives an example of what the printed menu looks like. Every drink gets called in a for:each loop in the main and this string (slightly altered for *SimpleDrink* and *HotBeverages*) is returned and printed in the console.
 
-   /**
-    * Gives a String about the current drink containing information
-    *
-    * @return String regarding the drinks info
-    */
+   /**\
+    * Gives a String about the current drink containing information\
+    *\
+    * @return String regarding the drinks info\
+    */\
     @Override
     public String toString() {
         String out = "This mixed drink is a \"" + this.getName() + "\" and has the following ingredients:\n";
