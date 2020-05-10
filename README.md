@@ -14,22 +14,22 @@ This is an important piece of code because it gives an example of what the print
 **Syntax Highlighting**
 
 ```java
-   /**\
-    * Gives a String about the current drink containing information\
-    *\
-    * @return String regarding the drinks info\
-    */\
-    @Override\
-    public String toString() { \
-    >   String out = "This mixed drink is a \"" + this.getName() + "\" and has the following ingredients:\n"; \
-        for (Liquid l : ingredients) { \
-            out = out.concat("- " + l.getName() + "\n"); \
-        } \
-        out = out.concat("The drink is a " + this.kind + "-drink.\nIt is served with a " + this.decoration + ".\nThis is a"); \
-        if(this.isAlcoholic()){ \
-            out = out.concat("n alcoholic mixed drink. It has " + String.format("%.2f", getAlcoholPercent()) + "% alcohol in it."); \
-        }else{ \
-           out = out.concat(" non-alcoholic mixed drink."); \
-        } \
-        return out; \
-    } 
+   /**
+    * Gives a String about the current drink containing information
+    *
+    * @return String regarding the drinks info
+    */
+    @Override
+    public String toString() { 
+      String out = "This mixed drink is a \"" + this.getName() + "\" and has the following ingredients:\n"; 
+      for (Liquid l : ingredients) { 
+            out = out.concat("- " + l.getName() + "\n");
+        }
+        out = out.concat("The drink is a " + this.kind + "-drink.\nIt is served with a " + this.decoration + ".\nThis is a");
+        if(this.isAlcoholic()){
+            out = out.concat("n alcoholic mixed drink. It has " + String.format("%.2f", getAlcoholPercent()) + "% alcohol in it.");
+        }else{
+           out = out.concat(" non-alcoholic mixed drink.");
+        }
+        return out;
+    }
