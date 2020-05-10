@@ -12,9 +12,9 @@ class MyException extends Exception{
     }
 }
 class TestMyException{
-    /* This Exception compares the volume to a fixed double, which represents the max. size of a glass
-
-        @return nothing because "void"
+    /** This Exception compares the volume to a fixed double, which represents the max. size of a glass
+     *
+     * @return nothing because "void"
      */
     static void smallEnough(double vol)throws MyException {
         if (vol > 0.75) {
@@ -22,9 +22,9 @@ class TestMyException{
         }
     }
 
-    /* It will be called if an exception is thrown
-
-    @return true
+    /** It will be called if an exception is thrown
+     *
+     *@return true
      */
     static boolean gotThrown (){
         return true;
