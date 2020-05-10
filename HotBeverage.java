@@ -1,4 +1,4 @@
-package com.company;
+
 /*
 Name: HotBeverage
 Creator: Viola Schlocker
@@ -74,7 +74,12 @@ public class HotBeverage extends Drink{
         }
         return false;
     }
-
+    
+    /**
+    * Gives a String about the current beverage containing information
+    *
+    * @return String regarding the beverages info
+     */
     @Override
     public String toString() {
         String out = ("This hot beverage is a " + this.getName() + "and has the following ingredients: \n");
