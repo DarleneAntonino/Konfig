@@ -51,6 +51,11 @@ public class SimpleDrink extends Drink{
         return false;
     }
 
+    /**
+    * Gives a String about the current drink containing information
+    * 
+    * @return String regarding the drinks info
+     */
     @Override
     public String toString() {
         String out = "This simple drink is a \"" + this.getName() + "\" and has the following ingredient:\n" +
