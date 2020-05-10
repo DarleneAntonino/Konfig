@@ -24,6 +24,11 @@ public class Main {
         Liquid gin1 = new Liquid("Beefeater London Dry, Gin", 0.09, 40);
         Liquid vermouth2 = new Liquid("Martini Fiero, Vermouth", 0.015, 14.9);
         Liquid spWater2 = new Liquid("Saskia, Sparkling Water", 1, 0);
+        Liquid coffee = new Liquid("Kaffee Partner, Bio Crema", 0.030, 0);
+        Liquid milk1 = new Liquid("Stainzer, Vollmilch", 0.1, 0);
+        Liquid milk2 = new Liquid("Stainzer, Vollmilch", 0.25, 0);
+        Liquid cocoa = new Liquid("Rapunzel, Bio Kakao", 0.010, 0);
+        Liquid whiskey = new Liquid("Tullamore Dew, Irish Whiskey", 0.010, 40);
 
         //all the simple drinks
         SimpleDrink shotVodka = new SimpleDrink("Vodkashot", vodka1);
@@ -33,8 +38,8 @@ public class Main {
         SimpleDrink sparklingWater = new SimpleDrink("Sparklingwater, Voeslauer", spWater1);
         SimpleDrink redW = new SimpleDrink("Redwine", redWine1);
         SimpleDrink sparkWater2 = new SimpleDrink("Sparklingwater, Saskia", spWater2);
-
-
+        SimpleDrink shotWhiskey = new SimpleDrink("Irish Whiskey, Tullamore Dew", whiskey);
+        
         //all the mixed drinks
         //red Spritzer
         List<Liquid> spritzRed = new ArrayList<Liquid>();
@@ -68,7 +73,32 @@ public class Main {
                 "cocktail umbrella and an orange twist");
 
         //all the hot beverages
-
+        //Hot Chocolate
+        List<Liquid> hotChocolate = new ArrayList<Liquid>();
+        hotChocolate.add(milk2);
+        hotChocolate.add(cocoa);
+        HotBeverage hotChocolate = new HotBeverage("Hot Chocolate", hotChocolate);
+        
+        //Cappuccino
+        List<Liquid> cappuccino = new ArrayList<Liquid>();
+        cappuccino.add(milk1);
+        cappuccino.add(coffee);
+        HotBeverage cappuccino = new HotBeverage("Cappuccino", cappuccino);
+        
+        //Latte Macchiatto
+        List<Liquid> latteMacchiatto = new ArrayList<Liquid>();
+        latteMacchiatto.add(milk2);
+        latteMacchiatto.add(coffee);
+        HotBeverage latteMachiatto = new HotBeverage("Latte Macchiatto", latteMacchiatto);
+        
+        HotBeverage espresso = new HotBeverage("Espresso", coffee);
+        
+        //Irish Coffee
+        List<Liquid> irishCoffee = new ArrayList<Liquid>();
+        irishCoffee.add(milk2);
+        irishCoffee.add(coffee);
+        irishCoffee.add(whiskey);
+        HotBeverage irishCoffee = new HotBeverage("Irish Coffee", irishCoffee);
 
         //the menu
         List<Drink> menu = new ArrayList<Drink>();
@@ -88,7 +118,12 @@ public class Main {
         menu.add(bronxCocktail);
 
         //hot
-
+        menu.add(hotChocolate);
+        menu.add(espresso);
+        menu.add(latteMacchiatto);
+        menu.add(cappuccino);
+        menu.add(irishCoffee);
+        
         //printing the menu
         System.out.println("This is our menu:\n");
         for (Drink d : menu) {
