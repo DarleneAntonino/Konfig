@@ -24,6 +24,7 @@ public class Main {
         Liquid gin1 = new Liquid("Beefeater London Dry, Gin", 0.09, 40);
         Liquid vermouth2 = new Liquid("Martini Fiero, Vermouth", 0.015, 14.9);
         Liquid spWater2 = new Liquid("Saskia, Sparkling Water", 1, 0);
+        Liquid water = new Liquid("Voeslauer, Still", 0.5, 0);
         Liquid coffee = new Liquid("Kaffee Partner, Bio Crema", 0.030, 0);
         Liquid milk1 = new Liquid("Stainzer, Vollmilch", 0.1, 0);
         Liquid milk2 = new Liquid("Stainzer, Vollmilch", 0.25, 0);
@@ -39,7 +40,7 @@ public class Main {
         SimpleDrink redW = new SimpleDrink("Redwine", redWine1);
         SimpleDrink sparkWater2 = new SimpleDrink("Sparklingwater, Saskia", spWater2);
         SimpleDrink shotWhiskey = new SimpleDrink("Irish Whiskey, Tullamore Dew", whiskey);
-        SimpleDrink hotWater = new SimpleDrink("Sparkling Water, Voeslauer", spWater1);
+        SimpleDrink hotWater = new SimpleDrink("Still, Voeslauer", water);
                                                
         //all the mixed drinks
         //red Spritzer
