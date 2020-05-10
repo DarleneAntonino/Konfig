@@ -82,39 +82,39 @@ public class Main {
         HotBeverage hotChocolate = new HotBeverage("Hot Chocolate", hotChocolate);
         
         //Cappuccino
-        List<Liquid> cappuccino = new ArrayList<Liquid>();
-        cappuccino.add(milk1);
-        cappuccino.add(coffee);
-        HotBeverage cappuccino = new HotBeverage("Cappuccino", cappuccino);
+        List<Liquid> cappu = new ArrayList<Liquid>();
+        cappu.add(milk1);
+        cappu.add(coffee);
+        HotBeverage cappuccino = new HotBeverage("Cappuccino", cappu);
         
         //Latte Macchiatto
-        List<Liquid> latteMacchiatto = new ArrayList<Liquid>();
-        latteMacchiatto.add(milk2);
-        latteMacchiatto.add(coffee);
-        HotBeverage latteMachiatto = new HotBeverage("Latte Macchiatto", latteMacchiatto);
+        List<Liquid> latteMacch = new ArrayList<Liquid>();
+        latteMacch.add(milk2);
+        latteMacch.add(coffee);
+        HotBeverage latteMachiatto = new HotBeverage("Latte Macchiatto", latteMacch);
         
         HotBeverage espresso = new HotBeverage("Espresso", coffee);
         
         //Irish Coffee
-        List<Liquid> irishCoffee = new ArrayList<Liquid>();
-        irishCoffee.add(milk2);
-        irishCoffee.add(coffee);
-        irishCoffee.add(whiskey);
-        HotBeverage irishCoffee = new HotBeverage("Irish Coffee", irishCoffee);
+        List<Liquid> irishC = new ArrayList<Liquid>();
+        irishC.add(milk2);
+        irishC.add(coffee);
+        irishC.add(whiskey);
+        HotBeverage irishCoffee = new HotBeverage("Irish Coffee", irishC);
         
         //Long Black
-        List<Liquid> longBlack = new ArrayList<Liquid>();
-        longBlack.add(hotWater);
-        longBlack.add(coffee);
-        longBlack.add(coffee);
-        HotBeverage longBlack = new HotBeverage("Long Black", longBlack);
+        List<Liquid> longB = new ArrayList<Liquid>();
+        longB.add(hotWater);
+        longB.add(coffee);
+        longB.add(coffee);
+        HotBeverage longBlack = new HotBeverage("Long Black", longB);
         
         //Mochaccino
-        List<Liquid> mochaccino = new ArrayList<Liquid>();
-        mochaccino.add(milk2);
-        mochaccino.add(coffee);
-        mochaccino.add(cocoa);
-        HotBeverage mochaccino = new HotBeverage("Mochaccino", mochaccino);
+        List<Liquid> mocha = new ArrayList<Liquid>();
+        mocha.add(milk2);
+        mocha.add(coffee);
+        mocha.add(cocoa);
+        HotBeverage mochaccino = new HotBeverage("Mochaccino", mocha);
         
         //the menu
         List<Drink> menu = new ArrayList<Drink>();
