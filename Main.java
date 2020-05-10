@@ -39,7 +39,8 @@ public class Main {
         SimpleDrink redW = new SimpleDrink("Redwine", redWine1);
         SimpleDrink sparkWater2 = new SimpleDrink("Sparklingwater, Saskia", spWater2);
         SimpleDrink shotWhiskey = new SimpleDrink("Irish Whiskey, Tullamore Dew", whiskey);
-        
+        SimpleDrink hotWater = new SimpleDrink("Sparkling Water, Voeslauer", spWater1);
+                                               
         //all the mixed drinks
         //red Spritzer
         List<Liquid> spritzRed = new ArrayList<Liquid>();
@@ -99,7 +100,21 @@ public class Main {
         irishCoffee.add(coffee);
         irishCoffee.add(whiskey);
         HotBeverage irishCoffee = new HotBeverage("Irish Coffee", irishCoffee);
-
+        
+        //Long Black
+        List<Liquid> longBlack = new ArrayList<Liquid>();
+        longBlack.add(hotWater);
+        longBlack.add(coffee);
+        longBlack.add(coffee);
+        HotBeverage longBlack = new HotBeverage("Long Black", longBlack);
+        
+        //Mochaccino
+        List<Liquid> mochaccino = new ArrayList<Liquid>();
+        mochaccino.add(milk2);
+        mochaccino.add(coffee);
+        mochaccino.add(cocoa);
+        HotBeverage mochaccino = new HotBeverage("Mochaccino", mochaccino);
+        
         //the menu
         List<Drink> menu = new ArrayList<Drink>();
         //simple
@@ -123,6 +138,8 @@ public class Main {
         menu.add(latteMacchiatto);
         menu.add(cappuccino);
         menu.add(irishCoffee);
+        menu.add(longBlack);
+        menu.add(mochaccino);
         
         //printing the menu
         System.out.println("This is our menu:\n");
