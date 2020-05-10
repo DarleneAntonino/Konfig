@@ -16,7 +16,7 @@ public class HotBeverage extends Drink{
      * uses multiple liquids
      */
     List <Liquid> ingredients = new ArrayList<Liquid>();
-    String kind;
+   
 
 
    /**
