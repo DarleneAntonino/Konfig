@@ -40,7 +40,7 @@ public class Main {
         SimpleDrink redW = new SimpleDrink("Redwine", redWine1);
         SimpleDrink sparkWater2 = new SimpleDrink("Sparklingwater, Saskia", spWater2);
         SimpleDrink shotWhiskey = new SimpleDrink("Irish Whiskey, Tullamore Dew", whiskey);
-        SimpleDrink hotWater = new SimpleDrink("Still, Voeslauer", hotWater);
+        SimpleDrink hotWater = new SimpleDrink("Still, Voeslauer", water);
         SimpleDrink espresso = new SimpleDrink("Espresso", coffee);  
         
         //all the mixed drinks
@@ -77,10 +77,10 @@ public class Main {
 
         //all the hot beverages
         //Hot Chocolate
-        List<Liquid> hotChocolate = new ArrayList<Liquid>();
-        hotChocolate.add(milk2);
-        hotChocolate.add(cocoa);
-        HotBeverage hotChocolate = new HotBeverage("Hot Chocolate", hotChocolate);
+        List<Liquid> hotChoco = new ArrayList<Liquid>();
+        hotChoco.add(milk2);
+        hotChoco.add(cocoa);
+        HotBeverage hotChocolate = new HotBeverage("Hot Chocolate", hotChoco);
         
         //Cappuccino
         List<Liquid> cappu = new ArrayList<Liquid>();
