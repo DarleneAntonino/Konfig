@@ -11,6 +11,9 @@ Kofig Abgabe 13.05
 Code sample from *MixedDrinks.java*:\
 This is an important piece of code because it gives an example of what the printed menu looks like. Every drink gets called in a for:each loop in the main and this string (slightly altered for *SimpleDrink* and *HotBeverages*) is returned and printed in the console.
 
+**Syntax Highlighting**
+
+```java
    /**\
     * Gives a String about the current drink containing information\
     *\
